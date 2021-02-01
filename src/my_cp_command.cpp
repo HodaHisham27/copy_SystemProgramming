@@ -13,7 +13,7 @@ int my_cp_command (int argc , char **argv)
 	}
 
 	int fdDstFile = open(argv[2] , O_CREAT | O_WRONLY , S_IRUSR | S_IWUSR);
-	if (fdSrcFile == -1)
+	if (fdDstFile == -1)
 	{
 		return 3;
 	}
